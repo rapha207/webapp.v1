@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro App Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 2em;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+        <p>Meu primeiro aplicativo web está funcionando!</p>
+        <button id="changeText">Mudar texto</button>
+    </div>
+
+    <script>
+        // JavaScript para adicionar interatividade
+        document.getElementById('changeText').addEventListener('click', function() {
+            const heading = document.querySelector('h1');
+            if (heading.textContent === 'Hello World!') {
+                heading.textContent = 'Olá Mundo!';
+            } else {
+                heading.textContent = 'Hello World!';
+            }
+        });
+    </script>
+</body>
+</html>
